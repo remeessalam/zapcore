@@ -30,13 +30,13 @@ const Home = () => {
             className="relative z-10 px-6 justify-center h-full text-white flex flex-col items-center gap-5 text-center md:max-w-[60rem] mx-auto"
           >
             <div className="rounded-text-box border-white/70 font-medium">
-              Welcome to [Your Company Name]
+              Welcome to Zapcore Technologies
             </div>
             <h1 className="heading-1">
               Shaping the Future <br /> of Technology
             </h1>
             <p className="desc">
-              At [Your Company Name], we specialize in crafting innovative
+              At Zapcore Technologies, we specialize in crafting innovative
               digital solutions that help businesses grow, engage audiences, and
               improve operational efficiency.
             </p>
@@ -62,7 +62,7 @@ const Home = () => {
                 Solutions.
               </h2>
               <p className="desc">
-                At [Your Company Name], we are a team of passionate innovators
+                At Zapcore Technologies, we are a team of passionate innovators
                 dedicated to delivering smart, reliable digital solutions that
                 empower businesses to thrive. With expertise in mobile and web
                 app development, AI-powered systems, chatbots, game development,
@@ -105,7 +105,7 @@ const Home = () => {
             Your Partner in Shaping the Future of Technology
           </h1>
           <p className="desc max-w-[50rem] mx-auto">
-            Founded with a passion for innovation, [Your Company Name] has
+            Founded with a passion for innovation, Zapcore Technologies has
             evolved into a trusted partner for businesses aiming to lead in the
             digital era. Our dedicated team of experts crafts tailor-made
             solutions—from mobile and web app development to AI, chatbots, game

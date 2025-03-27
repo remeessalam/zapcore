@@ -85,8 +85,8 @@ export const LandingPage = ({ page }) => {
               </h2>
               <p className="desc">
                 {isWebDevelopment
-                  ? "At AI Company, we specialize in delivering high-performance websites and digital platforms that help businesses thrive online. From custom web development to responsive design, we build solutions that are both user-friendly and visually stunning. Let's turn your vision into a reality."
-                  : "At AI Company, we specialize in creating intuitive, high-performing mobile applications tailored to meet the unique needs of businesses across industries. Our expert team combines technical expertise with creative design to develop apps that drive engagement and growth."}
+                  ? "At Zapcore Technologies, we specialize in delivering high-performance websites and digital platforms that help businesses thrive online. From custom web development to responsive design, we build solutions that are both user-friendly and visually stunning. Let's turn your vision into a reality."
+                  : "At Zapcore Technologies, we specialize in creating intuitive, high-performing mobile applications tailored to meet the unique needs of businesses across industries. Our expert team combines technical expertise with creative design to develop apps that drive engagement and growth."}
               </p>
             </div>
             <div className="flex justify-center lg:justify-start gap-5 mt-4">
@@ -137,10 +137,10 @@ export const LandingPage = ({ page }) => {
             Design & Revolution
           </h1>
           <p data-aos="fade-up" className="desc max-w-[50rem] mx-auto">
-            At AI Company, we understand that in today’s digital-first world,
-            your website is more than just an online presence—it’s the heart of
-            your brand’s identity, a vital business tool, and often the first
-            touchpoint for potential customers. In an era where first
+            At Zapcore Technologies, we understand that in today’s digital-first
+            world, your website is more than just an online presence—it’s the
+            heart of your brand’s identity, a vital business tool, and often the
+            first touchpoint for potential customers. In an era where first
             impressions matter more than ever, having a well-designed, fast, and
             responsive website is crucial to your business success. That’s why
             our website development services go beyond the basics—we aim to

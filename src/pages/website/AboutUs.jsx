@@ -45,7 +45,7 @@ const AboutUs = () => {
             <div data-aos="fade-left" className="h-full">
               <h2 className="heading-2 text-start mb-3">About Us</h2>
               <p className="desc text-start">
-                At [Your Company Name], we are a team of passionate innovators,
+                At Zapcore Technologies, we are a team of passionate innovators,
                 developers, engineers, and designers dedicated to crafting
                 cutting-edge digital solutions. Specializing in mobile and web
                 app development, custom software, AI-powered systems—including
@@ -86,7 +86,7 @@ const AboutUs = () => {
                     Innovation at Heart
                   </h6>
                   <p className="desc mt-2">
-                    At [Your Company Name], innovation drives us forward. We
+                    At Zapcore Technologies, innovation drives us forward. We
                     continuously explore emerging technologies to create
                     future-ready solutions that address today’s challenges and
                     anticipate tomorrow’s opportunities.

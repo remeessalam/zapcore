@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
             Unleashing Innovation Through Tailored Digital Solutions
           </h2>
           <p data-aos="fade-up" className="desc max-w-[40rem] mx-auto">
-            At [Your Company Name], our approach begins with understanding your
+            At Zapcore Technologies, our approach begins with understanding your
             unique business challenges and objectives. We deliver high-quality
             digital solutions—from mobile and web development to AI-driven
             innovations, custom chatbots, immersive game experiences, and VR &

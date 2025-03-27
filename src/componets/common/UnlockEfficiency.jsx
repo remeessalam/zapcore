@@ -13,7 +13,7 @@ const UnlockEfficiency = () => {
           Empower Your Business with Cutting-Edge Technology
         </h2>
         <p className="desc max-w-[40rem] text-center">
-          At [Your Company Name], we deliver innovative digital solutions—from
+          At Zapcore Technologies, we deliver innovative digital solutions—from
           mobile and web app development to AI, chatbots, immersive VR/AR
           experiences, and more—that empower your business to thrive in a
           dynamic digital landscape.

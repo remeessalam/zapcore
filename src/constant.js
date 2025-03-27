@@ -121,13 +121,13 @@ export const routes = [
 export const faqs = [
   {
     id: 1,
-    question: "What services does [Your Company Name] offer?",
+    question: "What services does Zapcore Technologies offer?",
     answer:
       "We provide a wide range of digital solutions including mobile and web app development, AI-powered systems, chatbots, immersive VR/AR experiences, game development, and custom software solutions tailored to your business needs.",
   },
   {
     id: 2,
-    question: "How does [Your Company Name] ensure quality in its solutions?",
+    question: "How does Zapcore Technologies ensure quality in its solutions?",
     answer:
       "Our team leverages cutting-edge technology and follows rigorous quality assurance processes to deliver robust, secure, and high-performing digital products that exceed industry standards.",
   },
@@ -145,7 +145,7 @@ export const faqs = [
   },
   {
     id: 5,
-    question: "Why should I choose [Your Company Name] as my digital partner?",
+    question: "Why should I choose Zapcore Technologies as my digital partner?",
     answer:
       "We are committed to innovation, excellence, and building long-term partnerships. Our client-centric approach, technical expertise, and focus on security and reliability ensure that we deliver digital solutions that drive your business forward.",
   },

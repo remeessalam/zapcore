@@ -13,6 +13,8 @@ import SpinnerContextProvider, {
   LoadingSpinnerContext,
 } from "./componets/SpinnerContext";
 import ScrollToTop from "./componets/common/ScrollToTop";
+import BlogDetails from "./pages/website/BlogDetails";
+import AiLandingPage from "./pages/landingPages/AiLandingPage";
 const Thankyou = lazy(() => import("./pages/Thankyou"));
 
 AOS.init({
@@ -41,6 +43,17 @@ export default function App() {
           ))}
           {/* Thankyou page */}
           <Route
+            path="/blogs/:id"
+            element={
+              <>
+                <WebsiteHeader />
+
+                <BlogDetails />
+                <WebsiteFooter />
+              </>
+            }
+          />
+          <Route
             path="/thankyou"
             element={
               <>
@@ -66,6 +79,16 @@ export default function App() {
               <>
                 <LandingHeader />
                 <LandingPage page={"app-development"} />
+                <LandingFooter />
+              </>
+            }
+          />
+          <Route
+            path="/ai-services"
+            element={
+              <>
+                <LandingHeader />
+                <AiLandingPage page={"ai"} />
                 <LandingFooter />
               </>
             }

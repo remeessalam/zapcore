@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { companyDetails, logoImg, routes } from "../constant";
-import { BsFacebook, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
+import {
+  BsFacebook,
+  BsInstagram,
+  BsLinkedin,
+  BsTwitter,
+  BsYoutube,
+} from "react-icons/bs";
 
 const Thankyou = () => {
   return (
@@ -25,7 +31,7 @@ const Thankyou = () => {
           Home
         </Link>
       </div>
-      <div className="py-14 bg-gradient-to-r border-t border-primary/30 from-primary/30 to-secondary/30">
+      <div className="py-14 bg-gray-900 border-primary/30 ">
         <div className="wrapper text-white">
           <div className="flex md:flex-row flex-col justify-between gap-10">
             <div className="flex flex-col items-center">
@@ -71,17 +77,20 @@ const Thankyou = () => {
           <div className="pt-4 mt-7 border-t text-gray-500 border-primary w-full">
             <div className="flex justify-center gap-5 w-full">
               <div className="flex gap-5 items-center mt-5">
-                <Link>
+                <Link target="_blank" to="#">
                   <BsFacebook className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
                 </Link>
-                <Link>
+                <Link to={companyDetails.twitter}>
                   <BsTwitter className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
                 </Link>
-                <Link>
+                <Link to={companyDetails.linkedin}>
                   <BsLinkedin className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
                 </Link>
-                <Link>
+                <Link to={companyDetails.youtube}>
                   <BsYoutube className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
+                </Link>
+                <Link to={companyDetails.instgram}>
+                  <BsInstagram className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
                 </Link>
               </div>
             </div>

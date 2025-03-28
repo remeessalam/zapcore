@@ -225,7 +225,10 @@ const ContactForm = () => {
             >
               <BsFacebook className="text-xl text-white group-hover:text-primary transition-all duration-300" />
             </Link>
-            <Link className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center">
+            <Link
+              to={companyDetails.twitter}
+              className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
+            >
               <BsTwitter className="text-xl text-white group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link

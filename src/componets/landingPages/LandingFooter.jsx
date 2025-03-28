@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const LandingFooter = () => {
   return (
-    <div className="py-14 bg-gray-600">
+    <div className="py-14 bg-gray-900">
       <div className="wrapper text-white">
         <div className="flex md:flex-row flex-col justify-between gap-10">
           <div className="flex flex-col items-center">
@@ -82,13 +82,13 @@ const LandingFooter = () => {
               <Link target="_blank" to="#">
                 <BsFacebook className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
               </Link>
-              <Link>
+              <Link to={companyDetails.twitter}>
                 <BsTwitter className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
               </Link>
               <Link to={companyDetails.linkedin}>
                 <BsLinkedin className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
               </Link>
-              <Link>
+              <Link to={companyDetails.youtube}>
                 <BsYoutube className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
               </Link>
               <Link to={companyDetails.instgram}>

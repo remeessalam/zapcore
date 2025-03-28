@@ -8,6 +8,7 @@ import { homeBannerVideo } from "../../constant";
 import OurServices from "../../componets/website/OurServices";
 import EndlessOpportunitiesSection from "../../componets/common/EndlessOpportunitiesSection";
 import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
+import Portfolio from "../../componets/common/Portfolio";
 
 const Home = () => {
   return (
@@ -30,7 +31,7 @@ const Home = () => {
             className="relative z-10 px-6 justify-center h-full text-white flex flex-col items-center gap-5 text-center md:max-w-[60rem] mx-auto"
           >
             <div className="rounded-text-box border-white/70 font-medium">
-              Welcome to Zapcore Technologies
+              Welcome to zapcore technologies pvt ltd
             </div>
             <h1 className="heading-1">
               Shaping the Future <br /> of Technology
@@ -120,6 +121,7 @@ const Home = () => {
       <UnlockEfficiency />
       <EndlessOpportunitiesSection />
       <Contact />
+      <Portfolio />
     </>
   );
 };

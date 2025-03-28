@@ -8,6 +8,8 @@ import faqPng from "./assets/images/faq-character.png";
 import appDevBanner from "./assets/images/app-dev-banner.jpg";
 import webDevBanner from "./assets/images/web-landing-banner.jpg";
 import webLandingAbout from "./assets/images/web-landing-about1.png";
+import aiServicesBanner from "./assets/images/aiServicesBanner.jpg";
+import aiServicesAbout from "./assets/images/aiServicesAbout.jpg";
 import appLandingAbout from "./assets/images/app-landing-about.png";
 import endlessOpportunitiesImg1 from "./assets/images/section-8-img-1.png";
 import endlessOpportunitiesImg2 from "./assets/images/section-8-img-2.png";
@@ -29,6 +31,14 @@ import { ReactComponent as IosIcon } from "./assets/svgs/iosdevelopment.svg";
 import { ReactComponent as AndroidIcon } from "./assets/svgs/androiddevelopment.svg";
 import { ReactComponent as FlutterIcon } from "./assets/svgs/flutterdevelopment.svg";
 import { ReactComponent as HybridAppIcon } from "./assets/svgs/hybridappdevelopment.svg";
+import {
+  FaBrain,
+  FaEye,
+  FaLanguage,
+  FaChartLine,
+  FaNetworkWired,
+  FaChalkboardTeacher,
+} from "react-icons/fa";
 
 // porfolio image
 // Import all images at the top (Web Development)
@@ -53,6 +63,7 @@ import PoteaImg from "./assets/app-development-portfolio/potea.png";
 import RentopBikeAndCarImg from "./assets/app-development-portfolio/rentop bike and car.png";
 
 import { lazy } from "react";
+import Blogs from "./pages/website/Blog";
 const Home = lazy(() => import("./pages/website/Home"));
 const Services = lazy(() => import("./pages/website/Services"));
 const ContactUs = lazy(() => import("./pages/website/ContactUs"));
@@ -76,6 +87,8 @@ export {
   homeBannerVideo,
   defaultBanner,
   aboutUsBanner,
+  aiServicesBanner,
+  aiServicesAbout,
   aboutUsGridImg1,
   aboutUsGridImg2,
   aboutUsGridImg3,
@@ -92,6 +105,8 @@ export const companyDetails = {
   email: "info@zapcoretechnologies.com",
   instgram: "https://www.instagram.com/zapcore_technologies/",
   linkedin: "https://www.linkedin.com/company/zapcore-technologies-pvt-ltd/",
+  twitter: "https://x.com/zapcore9",
+  youtube: "https://youtube.com/@zapcoretechnologies?si=v3PX728qgqJZz8es",
 };
 
 // website routes
@@ -110,6 +125,11 @@ export const routes = [
     name: "About Us",
     path: "/about-us",
     component: <AboutUs />,
+  },
+  {
+    name: "Blog",
+    path: "/Blog",
+    component: <Blogs />,
   },
   {
     name: "Contact Us",
@@ -212,6 +232,52 @@ export const appDevelopmentServices = [
     icon: HybridAppIcon,
     description:
       "We build feature-rich hybrid apps tailored to your business needs. We create mobile-friendly apps that work seamlessly across iOS and Android devices.",
+  },
+];
+
+// AI services
+export const aiDevelopmentServices = [
+  {
+    id: 1,
+    title: "Machine Learning Solutions",
+    icon: FaBrain,
+    description:
+      "Our data scientists develop custom ML models using TensorFlow and PyTorch to solve complex business problems. We optimize algorithms for accuracy, scalability, and real-world performance.",
+  },
+  {
+    id: 2,
+    title: "Computer Vision Systems",
+    icon: FaEye,
+    description:
+      "We design and implement advanced computer vision solutions for image recognition, object detection, and video analysis. Proficient in OpenCV and deep learning frameworks, we build intelligent visual systems.",
+  },
+  {
+    id: 3,
+    title: "Natural Language Processing",
+    icon: FaLanguage,
+    description:
+      "We create sophisticated NLP solutions for text analysis, sentiment detection, and conversational AI. Leveraging transformers and large language models, we enable machines to understand human language.",
+  },
+  {
+    id: 4,
+    title: "Predictive Analytics",
+    icon: FaChartLine,
+    description:
+      "We develop AI-powered forecasting models that predict trends and behaviors. Using time-series analysis and pattern recognition, we help businesses make data-driven decisions.",
+  },
+  {
+    id: 5,
+    title: "Deep Learning Solutions",
+    icon: FaNetworkWired,
+    description:
+      "Our team builds neural network architectures for complex pattern recognition and decision-making systems. We specialize in developing custom solutions for unique business challenges.",
+  },
+  {
+    id: 6,
+    title: "AI Strategy & Consulting",
+    icon: FaChalkboardTeacher,
+    description:
+      "We help businesses identify AI opportunities and develop implementation roadmaps. Our experts guide you through technology selection, data strategy, and ROI optimization.",
   },
 ];
 

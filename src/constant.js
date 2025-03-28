@@ -100,7 +100,8 @@ export {
 // company details
 export const companyDetails = {
   phone: "+91-8498941056",
-  whatsapp: "+0000000000",
+  whatsapp:
+    "https://api.whatsapp.com/send/?phone=8498941056&text&type=phone_number&app_absent=0",
   address: "ABC Street, City, Country",
   email: "info@zapcoretechnologies.com",
   instgram: "https://www.instagram.com/zapcore_technologies/",

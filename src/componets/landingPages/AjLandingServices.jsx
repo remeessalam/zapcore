@@ -1,8 +1,9 @@
 import React from "react";
-import { aiDevelopmentServices } from "../../constant";
+import { aiDevelopmentServices, gameDevelopmentServices } from "../../constant";
 import { Link } from "react-router-dom";
 
-const AiLandingServices = () => {
+const AiLandingServices = ({ page }) => {
+  const services = page ? aiDevelopmentServices : gameDevelopmentServices;
   const ServiceItem = ({ item }) => (
     <div
       data-aos="fade-up"
@@ -19,13 +20,17 @@ const AiLandingServices = () => {
     <div id="ai-services" className="bg-[#101010] text-white py-[5rem]">
       <div className="wrapper">
         <div className="flex flex-col items-center gap-5 text-white">
-          <div className="gradient-rounded-text-box">AI Services</div>
+          <div className="gradient-rounded-text-box">
+            {page ? "AI Services" : "Game Development"}
+          </div>
           <h2 className="heading-2 text-center mb-5">
-            Our AI-Powered Solutions
+            {page
+              ? "Our AI-Powered Solutions"
+              : "Our Game Development Solutions"}
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {aiDevelopmentServices.map((item) => (
+            {services.map((item) => (
               <ServiceItem key={item.id} item={item} />
             ))}
           </div>

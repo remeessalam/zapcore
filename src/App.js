@@ -95,6 +95,16 @@ export default function App() {
               </>
             }
           />
+          <Route
+            path="/game-development"
+            element={
+              <>
+                <LandingHeader />
+                <AiLandingPage page={"game development"} />
+                <LandingFooter />
+              </>
+            }
+          />
         </Routes>
       </Suspense>
     </SpinnerContextProvider>

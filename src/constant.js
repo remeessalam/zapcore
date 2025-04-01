@@ -39,6 +39,14 @@ import {
   FaNetworkWired,
   FaChalkboardTeacher,
 } from "react-icons/fa";
+import {
+  FaGamepad,
+  FaLightbulb,
+  FaPencilRuler,
+  FaRocket,
+  FaDollarSign,
+  FaTools,
+} from "react-icons/fa";
 
 // porfolio image
 // Import all images at the top (Web Development)
@@ -61,6 +69,8 @@ import MybitsShopImg from "./assets/app-development-portfolio/mybitsshop.png";
 import NamazImg from "./assets/app-development-portfolio/namaz.png";
 import PoteaImg from "./assets/app-development-portfolio/potea.png";
 import RentopBikeAndCarImg from "./assets/app-development-portfolio/rentop bike and car.png";
+import gamedevelopment from "./assets/images/gamedevelopment.jpg";
+import gameaboutus from "./assets/images/gameaboutus.jpg";
 
 import { lazy } from "react";
 import Blogs from "./pages/website/Blog";
@@ -73,10 +83,12 @@ export {
   logoImg,
   whyChooseUsPng,
   whyChooseUsIcon1,
+  gameaboutus,
   whyChooseUsIcon2,
   whyChooseUsIcon3,
   whyChooseUsIcon4,
   faqPng,
+  gamedevelopment,
   appDevBanner,
   webDevBanner,
   webLandingAbout,
@@ -282,6 +294,50 @@ export const aiDevelopmentServices = [
   },
 ];
 
+export const gameDevelopmentServices = [
+  {
+    id: 1,
+    title: "Game Design & Concept Development",
+    icon: FaLightbulb,
+    description:
+      "We transform creative ideas into engaging game concepts, ensuring immersive worlds and compelling narratives that captivate players.",
+  },
+  {
+    id: 2,
+    title: "Custom Game Development",
+    icon: FaGamepad,
+    description:
+      "From mobile to PC, console, and VR, we develop tailor-made games using industry-leading engines like Unity and Unreal Engine.",
+  },
+  {
+    id: 3,
+    title: "Art & Visual Design",
+    icon: FaPencilRuler,
+    description:
+      "Our artists create stunning visuals, whether hyper-realistic or stylized, to enhance storytelling and gameplay immersion.",
+  },
+  {
+    id: 4,
+    title: "Monetization & Marketing Strategy",
+    icon: FaDollarSign,
+    description:
+      "We help maximize game revenue with in-app purchases, ad integrations, and strategic marketing to reach the right audience.",
+  },
+  {
+    id: 5,
+    title: "Game Launch & Deployment",
+    icon: FaRocket,
+    description:
+      "We handle game launches across platforms, ensuring seamless deployment, optimized performance, and audience engagement.",
+  },
+  {
+    id: 6,
+    title: "Ongoing Support & Updates",
+    icon: FaTools,
+    description:
+      "Post-launch support includes bug fixes, new content updates, and performance enhancements to keep players engaged.",
+  },
+];
 // all services
 export const allServices = [
   {

@@ -7,7 +7,12 @@ import section5Img5 from "../../assets/images/section-5-img-5.png";
 import section5Img6 from "../../assets/images/section-5-img-6.png";
 import section5Img7 from "../../assets/images/section-5-img-7.png";
 import Contact from "../../componets/landingPages/Contact";
-import { aiServicesBanner, aiServicesAbout } from "../../constant";
+import {
+  aiServicesBanner,
+  aiServicesAbout,
+  gamedevelopment,
+  gameaboutus,
+} from "../../constant";
 import { Link as ScrollLink } from "react-scroll";
 import WhyChooseUs from "../../componets/common/WhyChooseUs";
 import EndlessOpportunitiesSection from "../../componets/common/EndlessOpportunitiesSection";
@@ -18,14 +23,16 @@ import ContactForm from "../../componets/common/ContactForm";
 import BrandLogos from "../../componets/common/BrandLogos";
 import AiLandingServices from "../../componets/landingPages/AjLandingServices";
 
-const AiLandingPage = () => {
+const AiLandingPage = ({ page }) => {
+  const isAi = Boolean(page === "ai");
+
   return (
     <>
       <div id="banner" className="h-screen relative">
         <img
-          src={aiServicesBanner}
+          src={isAi ? aiServicesBanner : gamedevelopment}
           className="w-full h-full object-cover object-right absolute"
-          alt="AI Services"
+          alt={isAi ? "AI Services" : "Game Development"}
         />
         <div className="bg-gradient-to-r from-black/70 to-primary/60 absolute w-full h-full"></div>
         <div
@@ -34,15 +41,32 @@ const AiLandingPage = () => {
         >
           <div className="relative z-10 px-6 justify-center h-full flex flex-col items-center gap-5 text-center md:max-w-[60rem] mx-auto">
             <div className="rounded-text-box border-white/70 font-medium text-white">
-              AI Services
+              {isAi ? "AI Services" : "Game Development"}
             </div>
-            <h1 className="heading-1 text-white">
-              Transforming Businesses With Intelligent AI Solutions
-            </h1>
-            <p className="text-white/90 desc">
-              Harness the power of artificial intelligence to drive innovation,
-              optimize operations, and unlock new opportunities for growth.
-            </p>
+            {isAi ? (
+              <>
+                <h1 className="heading-1 text-white">
+                  Transforming Businesses With Intelligent AI Solutions
+                </h1>
+                <p className="text-white/90 desc">
+                  Harness the power of artificial intelligence to drive
+                  innovation, optimize operations, and unlock new opportunities
+                  for growth.
+                </p>
+              </>
+            ) : (
+              <>
+                <h1 className="heading-1 text-white">
+                  Crafting Unique Gaming Experiences
+                </h1>
+                <p className="text-white/90 desc">
+                  At Zapcore Technologies, we don't just develop games; we
+                  create worlds that captivate, challenge, and inspire. Our
+                  mission is simple: to deliver exceptional gaming experiences
+                  that engage players and leave a lasting impression.
+                </p>
+              </>
+            )}
             <ScrollLink
               to="contact"
               smooth
@@ -60,7 +84,7 @@ const AiLandingPage = () => {
           data-aos="fade-up"
           className="gradient-rounded-text-box mx-auto lg:mx-0"
         >
-          AI Services
+          {isAi ? "AI Services" : "Game Development"}
         </div>
         <div className="flex flex-col-reverse items-center lg:grid grid-cols-2 gap-10 mt-7">
           <div
@@ -68,18 +92,35 @@ const AiLandingPage = () => {
             className="flex h-full flex-col gap-7 text-center lg:text-start"
           >
             <div className="flex flex-col gap-7">
-              <h2 className="heading-2">
-                Pioneering Intelligent Solutions for the Future
-              </h2>
-              <p className="desc">
-                At Zapcore Technologies, we specialize in delivering
-                cutting-edge AI solutions that transform business operations and
-                drive innovation. From machine learning implementations to
-                predictive analytics and natural language processing, we develop
-                intelligent systems that learn, adapt, and deliver measurable
-                results. Partner with us to unlock the full potential of
-                artificial intelligence for your organization.
-              </p>
+              {isAi ? (
+                <>
+                  <h2 className="heading-2">
+                    Pioneering Intelligent Solutions for the Future
+                  </h2>
+                  <p className="desc">
+                    At Zapcore Technologies, we specialize in delivering
+                    cutting-edge AI solutions that transform business operations
+                    and drive innovation. From machine learning implementations
+                    to predictive analytics and natural language processing, we
+                    develop intelligent systems that learn, adapt, and deliver
+                    measurable results. Partner with us to unlock the full
+                    potential of artificial intelligence for your organization.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h2 className="heading-2">
+                    Crafting Unique Gaming Experiences
+                  </h2>
+                  <p className="desc">
+                    At Zapcore Technologies, we don't just develop games; we
+                    create worlds that captivate, challenge, and inspire.
+                    Whether you're a casual gamer or a hardcore enthusiast, our
+                    mission is to deliver exceptional gaming experiences that
+                    leave a lasting impression.
+                  </p>
+                </>
+              )}
             </div>
             <div className="flex justify-center lg:justify-start gap-5 mt-4">
               <ScrollLink
@@ -96,20 +137,20 @@ const AiLandingPage = () => {
                 offset={-80}
                 className="secondary-btn"
               >
-                Our Services
+                {isAi ? "Our Services" : "Our Games"}
               </ScrollLink>
             </div>
           </div>
           <div data-aos="fade-left" className="h-full">
             <img
-              src={aiServicesAbout}
+              src={isAi ? aiServicesAbout : gameaboutus}
               className="object-contain max-h-[30rem]"
-              alt="AI Services"
+              alt={isAi ? "AI Services" : "Game Development"}
             />
           </div>
         </div>
       </section>
-      <AiLandingServices /> <WhyChooseUs />
+      <AiLandingServices page={isAi} /> <WhyChooseUs />
       {/* <Portfolio page="ai-services" /> */}
       <section className="py-[5rem] bg-black text-white">
         <div className="wrapper text-center flex flex-col gap-3">
@@ -123,15 +164,51 @@ const AiLandingPage = () => {
             data-aos="fade-up"
             className="heading-1 bg-gradient-to-r md:min-h-[5rem] from-primary to-secondary bg-clip-text text-transparent"
           >
-            Intelligence & Innovation
+            {isAi
+              ? "Intelligence & Innovation"
+              : "Crafting Unique Gaming Experiences"}
           </h1>
           <p data-aos="fade-up" className="desc max-w-[50rem] mx-auto">
-            In the age of digital transformation, artificial intelligence has
-            become the cornerstone of competitive advantage. Our AI services
-            empower businesses to leverage machine learning, deep learning, and
-            cognitive computing to solve complex challenges, automate processes,
-            and gain unprecedented insights. We don't just implement AI - we
-            create intelligent ecosystems that evolve with your business needs.
+            {isAi ? (
+              <>
+                In the age of digital transformation, artificial intelligence
+                has become the cornerstone of competitive advantage. Our AI
+                services empower businesses to leverage machine learning, deep
+                learning, and cognitive computing to solve complex challenges,
+                automate processes, and gain unprecedented insights. We don't
+                just implement AI – we create intelligent ecosystems that evolve
+                with your business needs.
+              </>
+            ) : (
+              <>
+                At Zapcore Technologies, we don't just develop games; we create
+                worlds that captivate, challenge, and inspire. Our mission is
+                simple: to deliver exceptional gaming experiences that engage
+                players and leave a lasting impression. Whether you’re a casual
+                gamer or a hardcore enthusiast, we design experiences that are
+                immersive, dynamic, and tailored to stand out in the competitive
+                gaming landscape.
+              </>
+            )}
+          </p>
+          <p data-aos="fade-up" className="desc max-w-[50rem] mx-auto mt-6">
+            {isAi ? (
+              <>
+                Our AI services empower businesses to leverage machine learning,
+                deep learning, and cognitive computing to solve complex
+                challenges, automate processes, and gain unprecedented insights.
+              </>
+            ) : (
+              <>
+                We are a diverse group of game developers, designers,
+                storytellers, and artists who share a passion for building
+                remarkable games. With experience across various platforms and
+                genres, we blend creativity with the latest technology to bring
+                fresh ideas to life. From mobile games to PC titles, virtual
+                reality, and more, our approach focuses on delivering fun,
+                engaging, and memorable experiences.
+              </>
+            )}
           </p>
         </div>
       </section>

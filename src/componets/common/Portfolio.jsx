@@ -20,7 +20,7 @@ const Portfolio = ({ page }) => {
       </div>
       <div
         className={`border border-slate-400 overflow-hidden rounded-xl ${
-          isApp ? ` w-fit mx-auto` : ``
+          isApp ? ` w-fit mx-auto` : ` h-fit`
         }`}
       >
         <img

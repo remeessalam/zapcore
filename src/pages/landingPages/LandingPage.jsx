@@ -120,7 +120,6 @@ export const LandingPage = ({ page }) => {
 
       <LandingServices page={page} />
       <WhyChooseUs />
-      <Portfolio page={page} />
 
       <section className="py-[5rem] bg-black text-white">
         <div className="wrapper text-center flex flex-col gap-3">
@@ -230,6 +229,7 @@ export const LandingPage = ({ page }) => {
       <EndlessOpportunitiesSection />
       <BrandLogos />
       <Contact />
+      <Portfolio page={page} />
     </>
   );
 };

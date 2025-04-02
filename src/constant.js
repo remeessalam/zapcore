@@ -59,18 +59,45 @@ import MavenImg from "./assets/web-development-portfolio/maven.png";
 import MenissaCateringsImg from "./assets/web-development-portfolio/menissa caterings.png";
 import MethodistImg from "./assets/web-development-portfolio/methodist.png";
 import ThinkRealityImg from "./assets/web-development-portfolio/think reality.png";
+// new web portfolio
+import akashmegamartweb from "./assets/web-development-portfolio/Akash Mega Mart.png";
+import arcanemirage from "./assets/web-development-portfolio/Arcane Mirage.png";
+import codehelp from "./assets/web-development-portfolio/Code Help.png";
+import globalluxury from "./assets/web-development-portfolio/Global Luxury.png";
+import huge from "./assets/web-development-portfolio/Huge.png";
+import midwan from "./assets/web-development-portfolio/Midwan.png";
+import spraybluestar from "./assets/web-development-portfolio/spray-bluestar.png";
 
 // Import all images at the top (App Development)
-import DubaiTravelGuideImg from "./assets/app-development-portfolio/dubai travel guide.png";
-import EloraHairPalourImg from "./assets/app-development-portfolio/elora hair palour.png";
-import EvansFrancisImg from "./assets/app-development-portfolio/evans francis.png";
-import HouseOfDeliverenceImg from "./assets/app-development-portfolio/house of deliverence.png";
-import MybitsShopImg from "./assets/app-development-portfolio/mybitsshop.png";
-import NamazImg from "./assets/app-development-portfolio/namaz.png";
-import PoteaImg from "./assets/app-development-portfolio/potea.png";
-import RentopBikeAndCarImg from "./assets/app-development-portfolio/rentop bike and car.png";
+// import DubaiTravelGuideImg from "./assets/app-development-portfolio/dubai travel guide.png";
+// import EloraHairPalourImg from "./assets/app-development-portfolio/elora hair palour.png";
+// import EvansFrancisImg from "./assets/app-development-portfolio/evans francis.png";
+// import HouseOfDeliverenceImg from "./assets/app-development-portfolio/house of deliverence.png";
+// import MybitsShopImg from "./assets/app-development-portfolio/mybitsshop.png";
+// import NamazImg from "./assets/app-development-portfolio/namaz.png";
+// import PoteaImg from "./assets/app-development-portfolio/potea.png";
+// import RentopBikeAndCarImg from "./assets/app-development-portfolio/rentop bike and car.png";
+
 import gamedevelopment from "./assets/images/gamedevelopment.jpg";
 import gameaboutus from "./assets/images/gameaboutus.jpg";
+
+//new app portfolio
+import bowlinggame from "./assets/app-development-portfolio/3d bowling game.png";
+import akashmegamart from "./assets/app-development-portfolio/Akash Mega Mart.png";
+import cryptopadie from "./assets/app-development-portfolio/cryptopadie.png";
+import DubaiTravelGuideImg from "./assets/app-development-portfolio/Dubai Travel Guide.png";
+import EvansFrancisImg from "./assets/app-development-portfolio/evans francis.png";
+import feelit from "./assets/app-development-portfolio/feel It.png";
+import HouseOfDeliverenceImg from "./assets/app-development-portfolio/House of Deliverance.png";
+import MybitsShopImg from "./assets/app-development-portfolio/mybitsshop.png";
+import NamazImg from "./assets/app-development-portfolio/Namaz.png";
+import NamazaImg from "./assets/app-development-portfolio/Namza.png";
+import PoteaImg from "./assets/app-development-portfolio/Potea.png";
+import procryptosignals from "./assets/app-development-portfolio/Pro Crypto Signals.png";
+import renttop from "./assets/app-development-portfolio/Renttop.png";
+import vetlabdoctor from "./assets/app-development-portfolio/Vetlab Doctor.png";
+import vetlabpatient from "./assets/app-development-portfolio/Vetlab Patient.png";
+import vetlab from "./assets/app-development-portfolio/Vetlab.png";
 
 import { lazy } from "react";
 import Blogs from "./pages/website/Blog";
@@ -450,7 +477,7 @@ export const whyChooseUsContent = [
   },
 ];
 
-export const webPortfolio = [
+export const newwebPortfolio = [
   {
     id: 1,
     img: FiveGHomesImg,
@@ -506,54 +533,196 @@ export const webPortfolio = [
     link: "https://thinkrealty.ae",
   },
 ];
+export const webPortfolio = [
+  {
+    id: 1,
+    img: akashmegamartweb,
+    title: "Akash Mega Mart",
+    link: "https://akashmegamart.com",
+  },
+  {
+    id: 2,
+    img: arcanemirage,
+    title: "Arcane Mirage",
+    link: "https://www.arcanemirage.com/",
+  },
+  {
+    id: 3,
+    img: codehelp,
+    title: "Code Help",
+    link: "https://www.codehelp.in/",
+  },
+  {
+    id: 4,
+    img: globalluxury,
+    title: "Global Luxury",
+    link: "",
+  },
+  {
+    id: 5,
+    img: huge,
+    title: "Huge",
+    link: "https://www.hugeinc.com/",
+  },
+  {
+    id: 6,
+    img: midwan,
+    title: "Midwan",
+    link: "https://www.midwam.com/en/about",
+  },
+  {
+    id: 7,
+    img: spraybluestar,
+    title: "Spray Bluestar",
+    link: "https://spray-bluestar.vercel.app",
+  },
+];
+// export const appPortfolio = [
+//   {
+//     id: 1,
+//     img: DubaiTravelGuideImg,
+//     title: "Dubai Travel Guide",
+//     link: "https://play.google.com/store/apps/details?id=com.eBps.dubai.travel.guide&pcampaignid=web_share",
+//   },
+//   {
+//     id: 2,
+//     img: EloraHairPalourImg,
+//     title: "Elora Hair Palour",
+//     link: "https://play.google.com/store/apps/details?id=app.barbera.io&pcampaignid=web_share",
+//   },
+//   {
+//     id: 3,
+//     img: EvansFrancisImg,
+//     title: "Evans Francis",
+//     link: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.evansfrancis&pcampaignid=web_share",
+//   },
+//   {
+//     id: 4,
+//     img: HouseOfDeliverenceImg,
+//     title: "House of Deliverence",
+//     link: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.hod&pcampaignid=web_share",
+//   },
+//   {
+//     id: 5,
+//     img: MybitsShopImg,
+//     title: "Mybits Shop",
+//     link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
+//   },
+//   {
+//     id: 6,
+//     img: NamazImg,
+//     title: "Namaz",
+//     link: "https://play.google.com/store/apps/details?id=com.iccbrossard.prayerBmes&pcampaignid=web_share",
+//   },
+//   {
+//     id: 7,
+//     img: PoteaImg,
+//     title: "Potea",
+//     link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
+//   },
+//   {
+//     id: 8,
+//     img: RentopBikeAndCarImg,
+//     title: "Rentop Bike and Car",
+//     link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
+//   },
+// ];
 
 export const appPortfolio = [
   {
     id: 1,
+    img: bowlinggame,
+    title: "3D Bowling Game",
+    link: "",
+  },
+  {
+    id: 2,
+    img: akashmegamart,
+    title: "Akash Mega Mart",
+    link: "https://play.google.com/store/apps/details?id=com.app.akash_mega_mart",
+  },
+  {
+    id: 3,
+    img: cryptopadie,
+    title: "Crypto Padie",
+    link: "",
+  },
+  {
+    id: 4,
     img: DubaiTravelGuideImg,
     title: "Dubai Travel Guide",
     link: "https://play.google.com/store/apps/details?id=com.eBps.dubai.travel.guide&pcampaignid=web_share",
   },
   {
-    id: 2,
-    img: EloraHairPalourImg,
-    title: "Elora Hair Palour",
-    link: "https://play.google.com/store/apps/details?id=app.barbera.io&pcampaignid=web_share",
-  },
-  {
-    id: 3,
+    id: 5,
     img: EvansFrancisImg,
     title: "Evans Francis",
     link: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.evansfrancis&pcampaignid=web_share",
   },
   {
-    id: 4,
+    id: 6,
+    img: feelit,
+    title: "Feel It",
+    link: "https://play.google.com/store/apps/details?id=com.feelit.feelit_app",
+  },
+  {
+    id: 7,
     img: HouseOfDeliverenceImg,
-    title: "House of Deliverence",
+    title: "House Of Deliverance",
     link: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.hod&pcampaignid=web_share",
   },
   {
-    id: 5,
+    id: 8,
     img: MybitsShopImg,
-    title: "Mybits Shop",
+    title: "My Bits Shop",
     link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
   },
   {
-    id: 6,
+    id: 9,
     img: NamazImg,
     title: "Namaz",
     link: "https://play.google.com/store/apps/details?id=com.iccbrossard.prayerBmes&pcampaignid=web_share",
   },
   {
-    id: 7,
+    id: 10,
+    img: NamazaImg,
+    title: "Namaza",
+    link: "",
+  },
+  {
+    id: 11,
     img: PoteaImg,
     title: "Potea",
     link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
   },
   {
-    id: 8,
-    img: RentopBikeAndCarImg,
-    title: "Rentop Bike and Car",
+    id: 12,
+    img: procryptosignals,
+    title: "Pro Crypto Signals",
+    link: "https://play.google.com/store/apps/details?id=com.procryptosignals",
+  },
+  {
+    id: 13,
+    img: renttop,
+    title: "Rent Top",
     link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
+  },
+  {
+    id: 14,
+    img: vetlabdoctor,
+    title: "Vetlab Doctor",
+    link: "https://play.google.com/store/apps/details?id=com.VetOnline",
+  },
+  {
+    id: 15,
+    img: vetlabpatient,
+    title: "Vetlab Patient",
+    link: "https://play.google.com/store/apps/details?id=com.samplecollector",
+  },
+  {
+    id: 16,
+    img: vetlab,
+    title: "Vetlab",
+    link: "https://play.google.com/store/apps/details?id=com.app.vetlab",
   },
 ];

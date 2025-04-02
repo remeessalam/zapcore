@@ -13,17 +13,25 @@ const Portfolio = ({ page }) => {
       rel="noopener noreferrer"
       data-aos="fade-up"
       key={item.id}
-      className="flex flex-col gap-3 rounded-md overflow-hidden relative group w-full"
+      className="flex  flex-col gap-3 rounded-md overflow-hidden relative group w-full mb-8"
     >
-      <img
-        src={item.img}
-        alt={item.title}
-        className={`w-full object-cover group-hover:scale-110 transition-all duration-300 ${
-          isApp ? "h-[30rem]" : "h-fit"
-        }`}
-      />
-      <div className="absolute bottom-0 left-0 w-full p-2 bg-primary/80 text-black flex flex-col gap-2">
+      <div className=" bottom-0 left-0 w-full p-2  text-white flex flex-col gap-2">
         <h3 className="font-medium text-center">{item.title}</h3>
+      </div>
+      <div
+        className={`border border-slate-400 overflow-hidden rounded-xl ${
+          isApp ? ` w-fit mx-auto` : ``
+        }`}
+      >
+        <img
+          src={item.img}
+          alt={item.title}
+          className={`w-full  group-hover:scale-110 transition-all duration-300 ${
+            isApp
+              ? "h-fit object-contain rounded max-h-[30rem] sm:max-h-[35rem] "
+              : "h-fit object-cover"
+          }`}
+        />
       </div>
     </Link>
   );
@@ -36,7 +44,7 @@ const Portfolio = ({ page }) => {
           <h2 className="heading-2 text-center mb-5">Our Selected Projects</h2>
 
           {isWebDevelopment && (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-1 lg:grid-cols-2  gap-8 max-w-7xl mx-auto">
               {webPortfolio.map((item) => (
                 <PortfolioItem key={item.id} item={item} isApp={false} />
               ))}
@@ -44,7 +52,7 @@ const Portfolio = ({ page }) => {
           )}
 
           {isAppDevelopment && (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4  w-full">
               {appPortfolio.map((item) => (
                 <PortfolioItem key={item.id} item={item} isApp={true} />
               ))}
@@ -54,18 +62,28 @@ const Portfolio = ({ page }) => {
           {!isWebDevelopment && !isAppDevelopment && (
             <>
               {webPortfolio.length > 0 && (
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                  {webPortfolio.map((item) => (
-                    <PortfolioItem key={item.id} item={item} isApp={false} />
-                  ))}
-                </div>
+                <>
+                  <h1 className="text-2xl font-bold text-white">
+                    Web Portfolios
+                  </h1>
+                  <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto mb-8">
+                    {webPortfolio.map((item) => (
+                      <PortfolioItem key={item.id} item={item} isApp={false} />
+                    ))}
+                  </div>
+                </>
               )}
               {appPortfolio.length > 0 && (
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                  {appPortfolio.map((item) => (
-                    <PortfolioItem key={item.id} item={item} isApp={true} />
-                  ))}
-                </div>
+                <>
+                  <h1 className="text-2xl font-bold text-white">
+                    App Portfolios
+                  </h1>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
+                    {appPortfolio.map((item) => (
+                      <PortfolioItem key={item.id} item={item} isApp={true} />
+                    ))}
+                  </div>
+                </>
               )}
             </>
           )}

@@ -558,12 +558,12 @@ export const webPortfolio = [
     title: "Global Luxury",
     link: "",
   },
-  {
-    id: 5,
-    img: huge,
-    title: "Huge",
-    link: "https://www.hugeinc.com/",
-  },
+  // {
+  //   id: 5,
+  //   img: huge,
+  //   title: "Huge",
+  //   link: "https://www.hugeinc.com/",
+  // },
   {
     id: 6,
     img: midwan,
@@ -724,5 +724,14 @@ export const appPortfolio = [
     img: vetlab,
     title: "Vetlab",
     link: "https://play.google.com/store/apps/details?id=com.app.vetlab",
+  },
+];
+
+export const gamePortfolio = [
+  {
+    id: 1,
+    img: bowlinggame,
+    title: "3D Bowling Game",
+    link: "",
   },
 ];

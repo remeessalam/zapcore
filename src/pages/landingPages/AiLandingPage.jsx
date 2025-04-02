@@ -12,6 +12,7 @@ import {
   aiServicesAbout,
   gamedevelopment,
   gameaboutus,
+  gamePortfolio,
 } from "../../constant";
 import { Link as ScrollLink } from "react-scroll";
 import WhyChooseUs from "../../componets/common/WhyChooseUs";
@@ -22,6 +23,7 @@ import Portfolio from "../../componets/common/Portfolio";
 import ContactForm from "../../componets/common/ContactForm";
 import BrandLogos from "../../componets/common/BrandLogos";
 import AiLandingServices from "../../componets/landingPages/AjLandingServices";
+import { Link } from "react-router-dom";
 
 const AiLandingPage = ({ page }) => {
   const isAi = Boolean(page === "ai");
@@ -79,6 +81,41 @@ const AiLandingPage = ({ page }) => {
         </div>
       </div>
       <ContactForm />
+      <div id="portfolio" className="bg-[#101010] text-white py-[5rem]">
+        <div className="wrapper">
+          <div className="flex flex-col items-center gap-5 text-white">
+            <div className="gradient-rounded-text-box">Portfolio</div>
+            <h2 className="heading-2 text-center mb-5">
+              Our Selected Projects
+            </h2>
+            <div className="grid grid-cols-1  gap-8 max-w-7xl mx-auto">
+              <Link
+                to={gamePortfolio[0].link}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-aos="fade-up"
+                key={gamePortfolio[0].id}
+                className="flex  flex-col gap-3 rounded-md overflow-hidden relative group w-full mb-8"
+              >
+                <div className=" bottom-0 left-0 w-full p-2  text-white flex flex-col gap-2">
+                  <h3 className="font-medium text-center">
+                    {gamePortfolio[0].title}
+                  </h3>
+                </div>
+                <div
+                  className={`border border-slate-400 overflow-hidden rounded-xl ${` w-fit mx-auto`}`}
+                >
+                  <img
+                    src={gamePortfolio[0].img}
+                    alt={gamePortfolio[0].title}
+                    className={`sm:w-full  group-hover:scale-110 transition-all duration-300 ${"h-fit object-contain rounded max-h-[30rem] sm:max-h-[35rem] "}`}
+                  />
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
       <section id="about" className="pb-[5rem] bg-black text-white wrapper">
         <div
           data-aos="fade-up"

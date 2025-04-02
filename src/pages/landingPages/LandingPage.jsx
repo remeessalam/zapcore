@@ -64,6 +64,7 @@ export const LandingPage = ({ page }) => {
       </div>
 
       <ContactForm />
+      <Portfolio page={page} />
 
       <section id="about" className="pb-[5rem] bg-black text-white wrapper">
         <div
@@ -229,7 +230,6 @@ export const LandingPage = ({ page }) => {
       <EndlessOpportunitiesSection />
       <BrandLogos />
       <Contact />
-      <Portfolio page={page} />
     </>
   );
 };

@@ -97,7 +97,7 @@ import procryptosignals from "./assets/app-development-portfolio/Pro-Crypto-Sign
 import renttop from "./assets/app-development-portfolio/renttopimg.png";
 import vetlabdoctor from "./assets/app-development-portfolio/Vetlab-Doctor.png";
 import vetlabpatient from "./assets/app-development-portfolio/Vetlab-Patient.png";
-import vetlab from "./assets/app-development-portfolio/vetlabimg.pngpng";
+import vetlab from "./assets/app-development-portfolio/vetlabimg.png";
 
 import { lazy } from "react";
 import Blogs from "./pages/website/Blog";

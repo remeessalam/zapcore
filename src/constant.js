@@ -90,8 +90,8 @@ import EvansFrancisImg from "./assets/app-development-portfolio/evans francis.pn
 import feelit from "./assets/app-development-portfolio/feel It.png";
 import HouseOfDeliverenceImg from "./assets/app-development-portfolio/House of Deliverance.png";
 import MybitsShopImg from "./assets/app-development-portfolio/mybitsshop.png";
-import NamazImg from "./assets/app-development-portfolio/Namaz.png";
-import NamazaImg from "./assets/app-development-portfolio/Namza.png";
+import NamazImg from "./assets/app-development-portfolio/namaz.png";
+import NamazaImg from "./assets/app-development-portfolio/namza.png";
 import PoteaImg from "./assets/app-development-portfolio/Potea.png";
 import procryptosignals from "./assets/app-development-portfolio/Pro Crypto Signals.png";
 import renttop from "./assets/app-development-portfolio/Renttop.png";

@@ -29,7 +29,7 @@ const Portfolio = ({ page }) => {
           className={`w-full  group-hover:scale-110 transition-all duration-300 ${
             isApp
               ? "h-fit object-contain rounded max-h-[30rem] sm:max-h-[35rem] "
-              : "h-fit object-cover"
+              : "h-fit object-contain"
           }`}
         />
       </div>

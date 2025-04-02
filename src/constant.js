@@ -85,7 +85,7 @@ import gameaboutus from "./assets/images/gameaboutus.jpg";
 import bowlinggame from "./assets/app-development-portfolio/3d bowling game.png";
 import akashmegamart from "./assets/app-development-portfolio/Akash Mega Mart.png";
 import cryptopadie from "./assets/app-development-portfolio/cryptopadie.png";
-import DubaiTravelGuideImg from "./assets/app-development-portfolio/Dubai Travel Guide.png";
+import DubaiTravelGuideImg from "./assets/app-development-portfolio/Dubai-Travel-Guide.png";
 import EvansFrancisImg from "./assets/app-development-portfolio/evans francis.png";
 import feelit from "./assets/app-development-portfolio/feel It.png";
 import HouseOfDeliverenceImg from "./assets/app-development-portfolio/House of Deliverance.png";

@@ -26,7 +26,7 @@ const Portfolio = ({ page }) => {
         <img
           src={item.img}
           alt={item.title}
-          className={`w-full  group-hover:scale-110 transition-all duration-300 ${
+          className={`sm:w-full  group-hover:scale-110 transition-all duration-300 ${
             isApp
               ? "h-fit object-contain rounded max-h-[30rem] sm:max-h-[35rem] "
               : "sm:h-fit object-contain"

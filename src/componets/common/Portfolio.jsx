@@ -20,7 +20,7 @@ const Portfolio = ({ page }) => {
       </div>
       <div
         className={`border border-slate-400 overflow-hidden rounded-xl ${
-          isApp ? ` w-fit mx-auto` : ` h-fit`
+          isApp ? ` w-fit mx-auto` : ` sm:h-fit`
         }`}
       >
         <img
@@ -29,7 +29,7 @@ const Portfolio = ({ page }) => {
           className={`w-full  group-hover:scale-110 transition-all duration-300 ${
             isApp
               ? "h-fit object-contain rounded max-h-[30rem] sm:max-h-[35rem] "
-              : "h-fit object-contain"
+              : "sm:h-fit object-contain"
           }`}
         />
       </div>

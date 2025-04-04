@@ -81,6 +81,18 @@ const WebsiteHeader = () => {
                 {name}
               </Link>
             ))}
+            <Link
+              to={`/web-development`}
+              className="text-3xl text-white font-medium transition-colors duration-300 link"
+            >
+              Web Development
+            </Link>
+            <Link
+              to={`/app-development`}
+              className="text-3xl text-white font-medium transition-colors duration-300 link"
+            >
+              App Development
+            </Link>
           </div>
         </Drawer>
         <div

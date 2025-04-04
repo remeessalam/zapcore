@@ -3,6 +3,7 @@ import blog1 from "../../assets/images/about-us-pageImg.jpg";
 import blog2 from "../../assets/images/about-us-banner.jpg";
 import blog3 from "../../assets/images/app-dev-banner.jpg";
 import { Link } from "react-router-dom";
+import { blogs } from "../../constant";
 const Blogs = () => {
   return (
     <div className="pt-[10rem] pb-[4rem] bg-gradient-to-b from-gray-300 to-[#f5f5f5]">
@@ -11,30 +12,26 @@ const Blogs = () => {
           Blogs
         </h1>
         <div className="max-w-5xl mx-auto mt-7 grid sm:grid-cols-2 gap-5">
-          {[blog1, blog2, blog3, blog1, blog2, blog3].map((item, i) => (
+          {blogs.map((item, i) => (
             <div
               key={item}
               data-aos="fade-up"
-              className="group space-y-2 p-5 rounded-xl border border-black/20"
+              className="group space-y-2 hover:bg-gray-400 transition-all duration-300  p-5 rounded-xl border border-black/20"
             >
-              <Link to={`/blogs/${i + 1}`}>
+              <Link to={item.link}>
                 <img
-                  src={item}
+                  src={item.img}
                   alt=""
-                  className="group-hover:brightness-90 w-full rounded-xl transition-all duration-300"
+                  className=" max-h-[15rem] h-[15rem] object-cover w-full rounded-xl transition-all duration-300"
                 />
               </Link>
               <Link
                 to={`/blogs/${i + 1}`}
                 className="text-lg font-semibold line-clamp-2 group-hover:text-purpleColor transition-all duration-300"
               >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                {item.title}
               </Link>
-              <p className="line-clamp-3">
-                Boluptatum dolores porro ex laborum officiis magnam deleniti ea
-                velit dolore inventore consequuntur voluptas sit doloribus vero?
-                Eos dolorum deleniti provident!
-              </p>
+              <p className="line-clamp-3">{item.desc}</p>
             </div>
           ))}
         </div>

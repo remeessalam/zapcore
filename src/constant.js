@@ -47,7 +47,13 @@ import {
   FaDollarSign,
   FaTools,
 } from "react-icons/fa";
-
+//blogs
+import blog1 from "./assets/images/blogs/blog1.webp";
+import blog2 from "./assets/images/blogs/blog2.jpg";
+import blog3 from "./assets/images/blogs/blog3.png";
+import blog4 from "./assets/images/blogs/blog4.png";
+import blog5 from "./assets/images/blogs/blog5.png";
+import blog6 from "./assets/images/blogs/blog6.png";
 // porfolio image
 // Import all images at the top (Web Development)
 import FiveGHomesImg from "./assets/web-development-portfolio/5ghomes.png";
@@ -734,5 +740,56 @@ export const gamePortfolio = [
     img: bowlinggame,
     title: "3D Bowling Game",
     link: "",
+  },
+];
+
+export const blogs = [
+  {
+    id: 1,
+    img: blog1,
+    link: "https://thecconnects.com/dyavarashetty-srikanta-founder-and-ceo-of-zapcore-technologies-exclusive-interview/",
+    title:
+      "Dyavarashetty Srikanta – Founder and CEO of ZapCore Technologies Exclusive Interview",
+    desc: "TheCconnects: Good afternoon, everyone. Today we have the pleasure of speaking with Dyavarashetty Srikanta, the visionary Founder and CEO of ZapCore Technologies. With a rich background in business administration from Badruka College of Commerce and a deep passion for tech innovation, Srikanta has steered his company to the forefront of AI-driven digital solutions. Welcome, Srikanta!",
+  },
+  {
+    id: 2,
+    img: blog2,
+    link: "https://indiaprimetimes.com/zapcore-technologies-pioneers-ai-driven-digital-solutions-amidst-rapid-industry-evolution/",
+    title:
+      "ZapCore Technologies Pioneers AI-Driven Digital Solutions Amidst Rapid Industry Evolution",
+    desc: "In today’s competitive digital environment, businesses are compelled to adopt agile strategies that blend creativity with advanced technology. ZapCore Technologies has positioned itself at this nexus by developing AI-powered tools and applications that cater to diverse sectors, including healthcare, supply chain, and beyond. Dyavarashetty Srikanta’s leadership and forward-thinking approach have been central to the company’s success, driving a wave of transformation that resonates well beyond conventional tech development.",
+  },
+  {
+    id: 3,
+    img: blog3,
+    link: "https://zapcoretechnologies.blogspot.com/2025/01/zapcore%20technologies.html",
+    title:
+      "How Zapcore Technologies Pvt. Ltd. Transforms Real Estate, Interior Design, and Restaurants with Augmented Reality",
+    desc: "In today’s rapidly evolving digital landscape, businesses are leveraging cutting-edge technologies to stay ahead of the curve. Among these innovations, augmented reality (AR) has emerged as a game-changer for industries such as real estate, interior design, and restaurants. At Zapcore Technologies Pvt. Ltd., we specialise in developing tailored AR solutions that empower businesses to deliver immersive and engaging experiences to their customers. Here’s how we make it happen.",
+  },
+  {
+    id: 4,
+    img: blog4,
+    link: "https://zapcoretechnologies.blogspot.com/2024/12/why-3d-augmented-visualization-is.html",
+    title:
+      "Why 3D Augmented Visualization is Revolutionizing Real Estate and How Zapcore Technologies Creates Cutting-Edge 3D Visualization Websites",
+    desc: "The real estate industry has always been about creating experiences—showing potential buyers and tenants the vision of their dream property. With the advent of technology, traditional methods like photos and 2D blueprints are giving way to innovative solutions like 3D augmented visualization. This game-changing technology not only enhances customer experiences but also empowers real estate businesses to stand out in a competitive market. Let’s explore why 3D augmented visualisation is essential for real estate and how Zapcore Technologies PVT LTD plays a pivotal role in bringing this technology to life.",
+  },
+  {
+    id: 5,
+    img: blog5,
+    link: "https://zapcoretechnologies.blogspot.com/2024/11/why-app-development-is-essential-for.html",
+    title:
+      "Why App Development is Essential for Every Business and How Zapcore Technologies Solves These Challenges",
+    desc: "In today’s fast-paced digital world, having a mobile app is no longer optional for businesses—it’s a necessity. Whether you’re a startup, a small business, or an enterprise, mobile apps have become a powerful tool to engage customers, streamline operations, and stay ahead of the competition. Here’s why app development is critical for every business and how Zapcore Technologies helps overcome the challenges associated with it.",
+  },
+  {
+    id: 6,
+    img: blog6,
+    link: "https://zapcoretechnologies.blogspot.com/2024/12/transforming-interior-design-with-3d.html",
+    title:
+      "Transforming Interior Design with 3D Visualization & VR Integration with zapcore technologies pvt ltd",
+    desc: "The interior design world is changing fast, and at the heart of this revolution are 3D visualisation and virtual reality (VR) integration. These cutting-edge tools aren’t just enhancing how designers showcase their ideas—they’re completely changing how clients experience and interact with those designs.",
   },
 ];

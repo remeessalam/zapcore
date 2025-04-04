@@ -22,7 +22,7 @@ const Blogs = () => {
                 <img
                   src={item.img}
                   alt=""
-                  className=" max-h-[15rem] h-[15rem] object-cover w-full rounded-xl transition-all duration-300"
+                  className=" max-h-[20rem] sm:max-h-[15rem] sm:h-[15rem] sm:object-cover w-full rounded-xl transition-all duration-300"
                 />
               </Link>
               <Link

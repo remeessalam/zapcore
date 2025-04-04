@@ -157,7 +157,7 @@ export const companyDetails = {
   phone: "+91-8498941056",
   whatsapp:
     "https://api.whatsapp.com/send/?phone=8498941056&text&type=phone_number&app_absent=0",
-  address: "ABC Street, City, Country",
+  address: "Hyderabad, Telangana",
   email: "info@zapcoretechnologies.com",
   instgram: "https://www.instagram.com/zapcore_technologies/",
   linkedin: "https://www.linkedin.com/company/zapcore-technologies-pvt-ltd/",

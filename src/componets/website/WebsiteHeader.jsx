@@ -33,6 +33,22 @@ const WebsiteHeader = () => {
               </Link>
             ))}
             <Link
+              to={`/web-development`}
+              className={`link text-sm ${
+                pathname === `/web-development` && "active-link"
+              }`}
+            >
+              Web Development
+            </Link>
+            <Link
+              to={`/app-development`}
+              className={`link text-sm ${
+                pathname === `/app-development` && "active-link"
+              }`}
+            >
+              App Development
+            </Link>
+            <Link
               to={`tel:${companyDetails.phone}`}
               className="text-black font-medium cursor-pointer tracking-wide bg-primary hover:bg-gray-300 text-sm  hover:-translate-y-1 shadow-2xl shadow-transparent rounded-full px-6 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300"
             >

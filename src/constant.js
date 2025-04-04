@@ -101,6 +101,7 @@ import vetlab from "./assets/app-development-portfolio/vetlabimg.png";
 
 import { lazy } from "react";
 import Blogs from "./pages/website/Blog";
+import { LandingPage } from "./pages/landingPages/LandingPage";
 const Home = lazy(() => import("./pages/website/Home"));
 const Services = lazy(() => import("./pages/website/Services"));
 const ContactUs = lazy(() => import("./pages/website/ContactUs"));

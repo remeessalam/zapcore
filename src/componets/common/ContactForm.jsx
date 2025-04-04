@@ -14,6 +14,7 @@ import { SpinnerContext } from "../SpinnerContext";
 import { FaPhone } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const ContactForm = () => {
   const { setSpinner } = useContext(SpinnerContext);
@@ -229,7 +230,7 @@ const ContactForm = () => {
               to={companyDetails.twitter}
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsTwitter className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <RiTwitterXFill className="text-xl text-white group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link
               to={companyDetails.linkedin}

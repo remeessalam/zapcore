@@ -16,7 +16,7 @@ const Portfolio = ({ page }) => {
       className="flex  flex-col gap-3 rounded-md overflow-hidden relative group w-full mb-8"
     >
       <div className=" bottom-0 left-0 w-full p-2  text-white flex flex-col gap-2">
-        <h3 className="font-medium text-center">{item.title}</h3>
+        <h3 className="desc text-center">{item.title}</h3>
       </div>
       <div
         className={`border border-slate-400 overflow-hidden rounded-xl ${
@@ -63,7 +63,7 @@ const Portfolio = ({ page }) => {
             <>
               {webPortfolio.length > 0 && (
                 <>
-                  <h1 className="text-2xl font-bold text-white">
+                  <h1 className="desc text-white underline underline-offset-4">
                     Web Portfolios
                   </h1>
                   <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto mb-8">
@@ -75,7 +75,7 @@ const Portfolio = ({ page }) => {
               )}
               {appPortfolio.length > 0 && (
                 <>
-                  <h1 className="text-2xl font-bold text-white">
+                  <h1 className="desc text-white underline underline-offset-4">
                     App Portfolios
                   </h1>
                   <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">

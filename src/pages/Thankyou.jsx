@@ -8,6 +8,7 @@ import {
   BsTwitter,
   BsYoutube,
 } from "react-icons/bs";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const Thankyou = () => {
   return (
@@ -65,12 +66,12 @@ const Thankyou = () => {
                     {companyDetails.phone}
                   </Link>
                 </div>
-                <div className="flex flex-col mt-2">
+                {/* <div className="flex flex-col mt-2">
                   <h6 className="text-[.9rem] mb-1">Office Address</h6>
                   <p className="text-white/70 desc text-sm max-w-[15rem]">
                     {companyDetails.address}
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -81,7 +82,7 @@ const Thankyou = () => {
                   <BsFacebook className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
                 </Link>
                 <Link to={companyDetails.twitter}>
-                  <BsTwitter className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
+                  <RiTwitterXFill className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
                 </Link>
                 <Link to={companyDetails.linkedin}>
                   <BsLinkedin className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />

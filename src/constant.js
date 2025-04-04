@@ -105,6 +105,15 @@ import vetlabdoctor from "./assets/app-development-portfolio/Vetlab-Doctor.png";
 import vetlabpatient from "./assets/app-development-portfolio/Vetlab-Patient.png";
 import vetlab from "./assets/app-development-portfolio/vetlabimg.png";
 
+//service images
+import app from "./assets/images/services/app.jpg";
+import web from "./assets/images/services/web.jpg";
+import ai from "./assets/images/services/ai.jpg";
+import chatbot from "./assets/images/services/chatbot.jpg";
+import arvr from "./assets/images/services/arvr.jpg";
+import game from "./assets/images/services/game.jpg";
+import custome from "./assets/images/services/custome.jpg";
+
 import { lazy } from "react";
 import Blogs from "./pages/website/Blog";
 import { LandingPage } from "./pages/landingPages/LandingPage";
@@ -377,6 +386,7 @@ export const allServices = [
   {
     id: 1,
     title: "Mobile App Development",
+    img: app,
     smallDescription:
       "With more people relying on their smartphones every day, having a mobile app can significantly boost your business’s visibility and customer engagement. Whether you need an app for iOS, Android, or both, our team creates seamless, user-friendly, and high-performance mobile applications that drive results.",
     detailContent: [
@@ -389,6 +399,7 @@ export const allServices = [
   {
     id: 2,
     title: "Web App Development",
+    img: web,
     smallDescription:
       "Web applications provide accessibility and flexibility, making them ideal for a variety of business needs. Our web app development services focus on building robust, secure, and scalable applications that enhance user experience and align with your business objectives.",
     detailContent: [
@@ -401,6 +412,7 @@ export const allServices = [
   {
     id: 3,
     title: "AI Development",
+    img: ai,
     smallDescription:
       "AI is revolutionizing industries, offering smarter solutions to enhance decision-making, automate tasks, and improve customer experiences. Our AI development services help businesses harness the power of data, machine learning, and predictive analytics to stay competitive.",
     detailContent: [
@@ -413,6 +425,7 @@ export const allServices = [
   {
     id: 4,
     title: "Chatbot Development",
+    img: chatbot,
     smallDescription:
       "Chatbots are a great way to improve customer engagement, automate support, and provide quick responses. Our chatbot development services help businesses create intelligent, efficient bots that handle customer inquiries, generate leads, and deliver personalized experiences.",
     detailContent: [
@@ -425,6 +438,7 @@ export const allServices = [
   {
     id: 5,
     title: "Game Development",
+    img: game,
     smallDescription:
       "The gaming industry continues to thrive, with new technologies allowing developers to create more immersive and exciting experiences. Our game development team has the expertise to design and build both casual and complex games, tailored to your audience and platform.",
     detailContent: [
@@ -437,6 +451,7 @@ export const allServices = [
   {
     id: 6,
     title: "VR & AR Development",
+    img: arvr,
     smallDescription:
       "Virtual and Augmented Reality are changing the way businesses engage with customers and train employees. Our VR & AR development services create cutting-edge, immersive experiences that deliver a strong impact across various industries, from entertainment to education and beyond.",
     detailContent: [
@@ -449,6 +464,7 @@ export const allServices = [
   {
     id: 7,
     title: "Custom Software Development",
+    img: custome,
     smallDescription:
       "Every business has unique challenges, and off-the-shelf software doesn’t always meet those needs. Our custom software development services focus on creating bespoke solutions that help streamline processes, improve efficiency, and boost productivity across your organization.",
     detailContent: [

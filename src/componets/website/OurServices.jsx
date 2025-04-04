@@ -84,10 +84,16 @@ const OurServices = ({ length }) => {
           {/* Service Content Container */}
           <div className="px-6 pb-8 space-y-6">
             {/* Title */}
-            <h2 className="text-3xl font-bold text-gray-100">
+            <h2 className="text-3xl font-bold text-gray-100 text-center mb-3">
               {selectedService.title}
             </h2>
-
+            <div>
+              <img
+                src={selectedService.img}
+                alt={selectedService.title}
+                className="max-h-[30rem] mx-auto rounded-xl"
+              />
+            </div>
             {/* Small Description */}
             <p className="text-lg text-gray-100 leading-relaxed">
               {selectedService.smallDescription}

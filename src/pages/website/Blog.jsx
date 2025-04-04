@@ -8,7 +8,7 @@ const Blogs = () => {
   return (
     <div className="pt-[10rem] pb-[4rem] bg-gradient-to-b from-gray-300 to-[#f5f5f5]">
       <div className="wrapper">
-        <h1 data-aos="fade-up" className="heading-1 text-center">
+        <h1 data-aos="fade-up" className="heading-2 text-center">
           Blogs
         </h1>
         <div className="max-w-5xl mx-auto mt-7 grid sm:grid-cols-2 gap-5">

@@ -88,33 +88,33 @@ const ContactForm = () => {
         </p>
         <Link
           to={`tel:${companyDetails.phone}`}
-          className="flex items-start gap-3 w-fit mt-5"
+          className="flex group items-start gap-3 w-fit mt-5"
         >
-          <div className="w-[2.5rem] h-[2.5rem] rounded-full bg-gray-900 flex justify-center items-center">
+          <div className="w-[2.5rem] group-hover:!bg-gray-800 h-[2.5rem] rounded-full bg-gray-900 flex justify-center items-center">
             <FaPhone className="text-2xl scale-x-[-1]" />
           </div>
-          <div className="flex flex-col h-full">
+          <div className="flex flex-col h-full group-hover:text-gray-300">
             <p className="font-medium">Call Us</p>
             <p className="desc">{companyDetails.phone}</p>
           </div>
         </Link>
         <Link
           to={`mailto:${companyDetails.email}`}
-          className="flex items-start gap-3 w-fit mt-5"
+          className="flex group items-start gap-3 w-fit mt-5"
         >
-          <div className="w-[2.5rem] h-[2.5rem] rounded-full bg-gray-900 flex justify-center items-center">
+          <div className="w-[2.5rem] group-hover:!bg-gray-800 h-[2.5rem] rounded-full bg-gray-900 flex justify-center items-center">
             <IoMail className="text-3xl scale-x-[-1]" />
           </div>
-          <div className="flex flex-col h-full">
+          <div className="flex flex-col h-full group-hover:text-gray-300">
             <p className="font-medium">Email</p>
             <p className="desc">{companyDetails.email}</p>
           </div>
         </Link>
-        <div className="flex items-start gap-3 w-fit mt-5">
-          <div className="min-w-[2.5rem] w-[2.5rem] h-[2.5rem] rounded-full bg-gray-900 flex justify-center items-center">
+        <div className="flex group items-start gap-3 w-fit mt-5">
+          <div className="min-w-[2.5rem] group-hover:!bg-gray-800 w-[2.5rem] h-[2.5rem] rounded-full bg-gray-900 flex justify-center items-center">
             <FaLocationDot className="text-2xl scale-x-[-1]" />
           </div>
-          <div className="flex flex-col h-full">
+          <div className="flex flex-col h-full group-hover:text-gray-300">
             <p className="font-medium">Location</p>
             <p className="desc max-w-[20rem]">{companyDetails.address}</p>
           </div>
@@ -222,30 +222,30 @@ const ContactForm = () => {
             <Link
               target="_blank"
               to="#"
-              className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
+              className="group w-[2.5rem] h-[2.5rem] group rounded-full border-primary border flex justify-center items-center"
             >
-              <BsFacebook className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsFacebook className=" group-hover:scale-110 text-xl text-white group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link
               to={companyDetails.twitter}
-              className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
+              className="group w-[2.5rem] group h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <RiTwitterXFill className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <RiTwitterXFill className="group-hover:scale-110 text-xl text-white group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link
               to={companyDetails.linkedin}
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsLinkedin className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsLinkedin className="text-xl group-hover:scale-110 text-white group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center">
-              <BsYoutube className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsYoutube className="text-xl group-hover:scale-110 text-white group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link
               to={companyDetails.instgram}
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsInstagram className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsInstagram className="text-xl group-hover:scale-110 text-white group-hover:text-primary transition-all duration-300" />
             </Link>
           </div>
         </div>
